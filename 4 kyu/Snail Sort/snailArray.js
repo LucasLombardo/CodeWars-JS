@@ -1,16 +1,13 @@
 function snail(array){
 	var result = [];
+	//while arrays length>1, remove top row, push top row to result & rotate array
 	while(array.length>1){
-		//push top row to result
-		result.push(array[0]);
-		//remove the top row from 2d array
-		array.shift();
-		//rotate the 2d array clockwise
+		result.push(array.shift());
 		array = rotate(array);
-		console.log(array)
 	}
+	//push last value to result and stage result
 	result.push(array[0]);
-	return result;
+	return [].concat.apply([], result);
 }
 
 function rotate(arr){
@@ -25,11 +22,5 @@ function rotate(arr){
 		}
 		result.push(row);
 	}
-	//if only given single value, return that value
 	return result;
 }
-
-
-
-
-[].concat.apply([], arrays);
