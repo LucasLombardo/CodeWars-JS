@@ -1,17 +1,18 @@
+## 3 kyu: Boggle Word Checker
+
+Link to problem on CodeWars: https://www.codewars.com/kata/boggle-word-checker
+
+### Problem Instructions
+
 Write a function that determines whether a string is a valid guess in a Boggle board, as per the rules of Boggle. A Boggle board is a 2D array of individual characters, e.g.:
 
-[ ["I","L","A","W"],
-  ["B","N","G","E"],
-  ["I","U","A","O"],
-  ["A","S","R","L"] ]
-[ ["I","L","A","W"],
-  ["B","N","G","E"],
-  ["I","U","A","O"],
-  ["A","S","R","L"] ]
+```
 [ ['I','L','A','W'],
   ['B','N','G','E'],
   ['I','U','A','O'],
   ['A','S','R','L'] ]
+```
+
 Valid guesses are strings which can be formed by connecting adjacent cells (horizontally, vertically, or diagonally) without re-using any previously used cells.
 
 For example, in the above board "BINGO", "LINGO", and "ILNBIA" would all be valid guesses, while "BUNGIE", "BINS", and "SINUS" would not.
