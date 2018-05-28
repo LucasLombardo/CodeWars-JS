@@ -1,9 +1,16 @@
+## 6 kyu: Bingo!
+
+Link to problem on CodeWars: https://www.codewars.com/kata/bingo/javascript
+
+### Problem Instructions
+
 Given a random bingo card and an array of called numbers, determine if you have a bingo!
 
 Parameters: card and numbers arrays.
 
 Example input:
 
+```
 card = [
   ['B', 'I', 'N', 'G', 'O'],
   [1, 16, 31, 46, 61],
@@ -14,39 +21,25 @@ card = [
 ]
 
 numbers = ['B1', 'I16', 'N31', 'G46', 'O61']
-Output: true if you have a bingo, false if you do not.
+```
+
+###Output: true if you have a bingo, false if you do not.
 
 You have a bingo if you have a complete row, column, or diagonal - each consisting of 5 numbers, or 4 numbers and the FREE SPACE.
 
-Constraints:
-Each column includes 5 random numbers within a range:
+###Constraints:
+Each column includes 5 random numbers within a range (inclusive):
+
+```
 'B': 1 - 15
 'I': 16 - 30
 'N': 31 - 45
 'G': 46 - 60
 'O': 61 - 75
+```
 
-Notes:
+###Notes:
 All numbers will be within the above ranges.
 FREE SPACE will not be included in the numbers array but always counts towards a bingo.
 The first array of the card is the column headers.
 numbers array will include only tiles present in the card, without duplicates.
-Examples:
-card:
-------------------------------
-| B  | I  |   N    | G  | O  |
-==============================
-| 2  | 17 |   32   | 47 | 74 |
-------------------------------
-| 14 | 25 |   44   | 48 | 62 |
-------------------------------
-| 5  | 22 | 'FREE' | 49 | 67 |
-------------------------------
-| 10 | 23 |   45   | 59 | 73 |
-------------------------------
-| 1  | 30 |   33   | 58 | 70 |
-------------------------------
-
-numbers: ['N32', 'N45', 'B7', '075', 'N33', 'N41, 'I18', 'N44']
-
-// return true - you have bingo at ['N32', 'N44', 'FREE', 'N45', 'N33']
