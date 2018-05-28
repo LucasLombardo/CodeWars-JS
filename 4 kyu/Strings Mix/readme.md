@@ -1,5 +1,12 @@
+## 4 kyu: Strings Mix
+
+Link to problem on CodeWars: https://www.codewars.com/kata/strings-mix/javascript
+
+### Problem Instructions
+
 Given two strings s1 and s2, we want to visualize how different the two strings are. We will only take into account the lowercase letters (a to z). First let us count the frequency of each lowercase letters in s1 and s2.
 
+```
 s1 = "A aaaa bb c"
 
 s2 = "& aaa bbb c d"
@@ -7,6 +14,7 @@ s2 = "& aaa bbb c d"
 s1 has 4 'a', 2 'b', 1 'c'
 
 s2 has 3 'a', 3 'b', 1 'c', 1 'd'
+```
 
 So the maximum for 'a' in s1 and s2 is 4 from s1; the maximum for 'b' is 3 from s2. In the following we will not consider letters when the maximum of their occurrences is less than or equal to 1.
 
@@ -18,6 +26,7 @@ In the result, substrings (a substring is for example 2:nnnnn or 1:hhh; it conta
 
 Hopefully other examples can make this clearer.
 
+```
 s1 = "my&friend&Paul has heavy hats! &"
 s2 = "my friend John has many many friends &"
 mix(s1, s2) --> "2:nnnnn/1:aaaa/1:hhh/2:mmm/2:yyy/2:dd/2:ff/2:ii/2:rr/=:ee/=:ss"
@@ -29,3 +38,4 @@ mix(s1, s2) --> "1:mmmmmm/=:nnnnnn/1:aaaa/1:hhh/2:yyy/2:dd/2:ff/2:ii/2:rr/=:ee/=
 s1="Are the kids at home? aaaaa fffff"
 s2="Yes they are here! aaaaa fffff"
 mix(s1, s2) --> "=:aaaaaa/2:eeeee/=:fffff/1:tt/2:rr/=:hh"
+```

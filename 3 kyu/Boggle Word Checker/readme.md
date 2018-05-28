@@ -1,6 +1,6 @@
 ## 3 kyu: Boggle Word Checker
 
-Link to problem on CodeWars: https://www.codewars.com/kata/boggle-word-checker
+Link to problem on CodeWars: https://www.codewars.com/kata/boggle-word-checker/javascript
 
 ### Problem Instructions
 
